@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="/cadastroaluno.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i>👨‍🎓</i> CADASTRO DE ALUNOS</h1>
+        <form id="studentForm">
+            <div class="form-row">
+                <div>
+                    <label for="codigoAluno">Código do Aluno</label>
+                    <input type="text" id="codigoAluno" placeholder="N. do Cod.">
+                </div>
+                <div>
+                    <label for="estadoAluno">Estado do Aluno</label>
+                    <input type="text" id="estadoAluno" placeholder="ATIVO/INATIVO">
+                </div>
+                <div>
+                    <label for="turma">Turma</label>
+                    <input type="text" id="turma" placeholder="Digite a turma">
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="nomeAluno">Nome do Aluno</label>
+                    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno">
+                </div>
+                <div>
+                    <label for="curso">Curso</label>
+                    <input type="text" id="curso" placeholder="Digite o curso">
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="nascimento">Nascimento</label>
+                    <input type="date" id="nascimento">
+                </div>
+                <div>
+                    <label>Sexo</label>
+                    <div class="radio-group">
+                        <input type="radio" id="masculino" name="sexo" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="sexo" value="Feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="outro" name="sexo" value="Outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="000.000.000-00">
+                </div>
+                <div>
+                    <label for="ano">Ano</label>
+                    <input type="text" id="ano" placeholder="Digite o ano">
+                </div>
+                <div>
+                    <label for="turno">Turno</label>
+                    <input type="text" id="turno" placeholder="Digite o turno">
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="responsavel">Nome do Responsável se menor</label>
+                    <input type="text" id="responsavel" placeholder="Digite o nome do responsável">
+                </div>
+                <div>
+                    <label for="matricula">Data da Matrícula</label>
+                    <input type="date" id="matricula">
+                </div>
+            </div>
+            <div>
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" placeholder="Campo observações"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn cadastrar">CADASTRAR</button>
+                <button type="button" class="btn alterar">ALTERAR</button>
+                <button type="button" class="btn excluir">EXCLUIR</button>
+                <button type="reset" class="btn limpar">LIMPAR</button>
+            </div>
+        </form>
+    </div>
+    <script src="/scritptaluno.js"></script>
+</body>
+</html>

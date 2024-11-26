@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="/criarconta.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRIAR CONTA</h1>
+        <form id="signupForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Exemplo: usuario@gmail.com" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            
+            <label for="confirmPassword">Confirme sua senha:</label>
+            <input type="password" id="confirmPassword" placeholder="Confirme sua senha" required>
+            
+            <label for="token">Tokken:</label>
+            <input type="text" id="token" placeholder="Digite o token" required>
+            
+            <button type="submit" id="createAccount">CRIAR</button>
+        </form>
+        
+        <div class="divider">
+            <span>Ou:</span>
+        </div>
+        
+        <div class="social-login">
+            <button class="google">Continuar com o Google</button>
+            <button class="microsoft">Continuar com a Microsoft</button>
+            <button class="apple">Continuar com a Apple</button>
+        </div>
+    </div>
+    <script src="/scriptcriarconta.js"></script>
+</body>
+</html>

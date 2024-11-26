@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="/telalogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>ACESSAR</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Exemplo: usuario@gmail.com" required>
+
+            <div class="form-row">
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+                </div>
+                <div>
+                    <label for="confirmaSenha">Confirme sua senha:</label>
+                    <input type="password" id="confirmaSenha" required>
+                </div>
+            </div>
+
+            <label for="tokken">Tokken:</label>
+            <input type="text" id="tokken" required>
+
+            <button type="submit" class="btn-acessar" onclick="window.location.href='menu.html'" >ACESSAR</button>
+        </form>
+
+        <div class="divider">
+            <hr> <span>Ou:</span> <hr>
+        </div>
+
+        <div class="social-buttons">
+            <button class="btn-social google"> Continuar com o Google</button>
+            <button class="btn-social microsoft"> Continuar com a Microsoft</button>
+            <button class="btn-social apple"> Continuar com a Apple</button>
+        </div>
+    </div>
+    <script src="/scriptlogin.js"></script>
+</body>
+</html>
